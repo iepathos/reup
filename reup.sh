@@ -5,13 +5,9 @@ arch=$(uname)
 bash bootstrap_go.sh
 
 # TODO: just download the appropriate pre-compiled binary of sysreqs
-go install github.com/iepathos/sysreqs
+go install github.com/iepathos/reqs
 
-if [[ "$arch" == "Linux" ]]; then
-    cat common-requirements.txt apt-requirements.txt | sysreqs
-elif [[ "$arch" == "Darwin" ]]; then
-    cat common-requirements.txt brew-requirements.txt | sysreqs
-fi
+reqs
 
 # install pyenv
 PYENV_HOME=~/.pyenv
