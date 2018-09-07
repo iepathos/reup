@@ -7,7 +7,7 @@ bash bootstrap_go.sh
 # TODO: just download the appropriate pre-compiled binary of sysreqs
 go install github.com/iepathos/reqs
 
-reqs
+reqs -u
 
 # install pyenv
 PYENV_HOME=~/.pyenv
