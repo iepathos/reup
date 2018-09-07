@@ -27,3 +27,4 @@ chsh -s `which zsh`
 # copy over shellenv exports to ~/.zshrc
 cat shellenv/goexports.sh >> ~/.zshrc
 cat shellenv/pyexports.sh >> ~/.zshrc
+cat shellenv/sublexports.sh >> ~/.zshrc
