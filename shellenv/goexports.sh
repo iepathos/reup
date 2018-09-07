@@ -1,3 +1,3 @@
 export GOPATH=$HOME/go
-export GOBIN=$GOROOT/bin
+export GOBIN=$GOPATH/bin
 export PATH=$PATH:$GOBIN
