@@ -1,11 +1,11 @@
-#!/bin/sh
+#!/bin/bash
 
 arch=$(uname)
 
-sh bootstrap_go.sh
+bash bootstrap_go.sh
 
 # TODO: just download the appropriate pre-compiled binary of sysreqs
-go install -u github.com/iepathos/sysreqs
+go install github.com/iepathos/sysreqs
 
 if [[ "$arch" == "Linux" ]]; then
     cat common-requirements.txt apt-requirements.txt | sysreqs
